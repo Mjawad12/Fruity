@@ -14,6 +14,7 @@ module.exports = {
       },
       fontFamily: {
         primary: '"ClashDisplay", sans-serif',
+        secondary: '"Popins", sans-serif',
       },
       colors: {
         C1: "#C9E78A",

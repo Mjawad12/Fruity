@@ -1,5 +1,5 @@
 "use client";
-import React, { Suspense, useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Float } from "@react-three/drei";
 import Can, { Canred, Canpurple } from "./Can";
 import { useFrame } from "@react-three/fiber";
