@@ -4,7 +4,7 @@ function Carasoulbtns({ setfS, fS, setForward }) {
   return (
     <div
       className="absolute z-40 flex justify-between 
-      items-center w-full md:px-20 px-5 "
+      items-center w-full md:px-20 px-2 "
     >
       <div
         onClick={() => {
@@ -13,7 +13,7 @@ function Carasoulbtns({ setfS, fS, setForward }) {
             setfS((prev) => prev - 1);
           }
         }}
-        className="w-14 h-14 bg-gray-600 flex cursor-pointer items-center justify-center rounded-full "
+        className="md:w-14 md:h-14  sm:w-10 sm:h-10 w-8 h-8 bg-gray-600 flex cursor-pointer items-center justify-center rounded-full "
       >
         <svg
           id="Layer_1"
@@ -38,7 +38,7 @@ function Carasoulbtns({ setfS, fS, setForward }) {
             setfS((prev) => prev + 1);
           }
         }}
-        className="w-14 h-14 bg-gray-600 flex cursor-pointer items-center justify-center rounded-full "
+        className="md:w-14 md:h-14 sm:w-10 sm:h-10 w-8 h-8 bg-gray-600 flex cursor-pointer items-center justify-center rounded-full "
       >
         <svg
           className="scale-x-[-1]"
