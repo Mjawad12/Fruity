@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .Ph {
+    min-height: calc(100vh - 80px);
+  }
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+hr {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ClashDisplay", sans-serif;
+  src: url("./Fonts/ClashDisplay-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay", sans-serif;
+  src: url("./Fonts/ClashDisplay-Extralight.woff") format("woff");
+  font-weight: 100;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay", sans-serif;
+  src: url("./Fonts/ClashDisplay-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay", sans-serif;
+  src: url("./Fonts/ClashDisplay-Variable.woff") format("woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClashDisplay", sans-serif;
+  src: url("./Fonts/ClashDisplay-Semibold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+.btn-p {
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "ClashDisplay", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.289);
+  background-color: #b4b4b4;
+  color: white;
+}
+.btn-p:hover {
+  box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.447);
+}
+
+.mainHero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 50em) {
+    justify-content: start;
+  }
+}
+.mainHero h2 {
+  color: #fff;
+  font-family: "ClashDisplay", sans-serif;
+  font-size: 449.841px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  position: absolute;
+
+  @media (max-width: 70em) {
+    font-size: 300px;
+  }
+  @media (max-width: 50em) {
+    font-size: 200px;
+  }
+  @media (max-width: 40em) {
+    font-size: 150px;
+  }
+  @media (max-width: 30em) {
+    margin-top: 1rem;
+    font-size: 100px;
+  }
+}
+
+.images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+}
+.images img {
+  width: 15rem;
+}
+.images img:nth-child(1) {
+  width: 429.184px;
+  height: 419.465px;
+  transform: rotate(102deg);
+  border-radius: 4vw 0vw;
+  translate: 0 200px;
+  filter: blur(6px);
+  position: absolute;
+  left: -6rem;
+  @media (max-width: 80em) {
+    width: 329.184px;
+    height: 319.465px;
+  }
+  @media (max-width: 70em) {
+    width: 250.184px;
+    height: 250.465px;
+  }
+}
+.images img:nth-child(2) {
+  transform: translate(1rem, -25rem);
+  rotate: -70deg;
+  position: absolute;
+  top: 10rem;
+  scale: 0.9;
+  filter: blur(5px);
+}
+.images img:nth-child(3) {
+  width: 312.897px;
+  height: 305.811px;
+  rotate: 110deg;
+  transform: scaleY(-1);
+  position: absolute;
+  right: -3.5rem;
+  translate: 0 7rem;
+  border-radius: 4vw 0vw;
+  @media (max-width: 80em) {
+    width: 259.184px;
+    height: 259.465px;
+    rotate: 190deg;
+  }
+  @media (max-width: 70em) {
+    width: 209.184px;
+    height: 209.465px;
+    rotate: 190deg;
+  }
+}
+.images img:nth-child(4) {
+  position: absolute;
+  top: 0;
+  transform: translate(15.5rem, 2.5rem);
+}
+
+.btnDiv {
+  z-index: 20;
+}
+canvas {
+  min-height: calc(100vh - 80px);
+  z-index: 20;
+  position: relative;
+}
