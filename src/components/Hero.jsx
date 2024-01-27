@@ -177,8 +177,10 @@ const Slide = ({ title, Section, clr, initial }) => {
         initial={initial}
         className={`w-full absolute inset-0 h-full overflow-hidden`}
       >
-        <div className="mainHero w-full  relative h-screen mt-8 ">
-          <h2 className="z-20 relative">{title}</h2>
+        <div className="mainHero w-full  relative h-screen flex justify-center items-start md:items-center ">
+          <h2 className="z-20 relative md:text-[400px] sm:text-[200px] text-[100px] font-primary font-bold text-white small:mt-9">
+            {title}
+          </h2>
         </div>
       </motion.div>
     </>
@@ -192,12 +194,20 @@ const ImgDiv = ({ Imgs, imgRef, initial }) => {
     <>
       <motion.div
         ref={imgRef}
-        className="absolute w-full h-screen inset-0 images "
+        className="absolute w-full h-screen inset-0 images  "
         initial={initial}
       >
         <motion.img src={img1} alt={img1.slice(0, 9)} />
-        <motion.img src={img2} alt={img1.slice(0, 9)} />
-        <motion.img src={img3} alt={img1.slice(0, 9)} />
+        <motion.img
+          className="small:hidden"
+          src={img2}
+          alt={img1.slice(0, 9)}
+        />
+        <motion.img
+          className="small:hidden"
+          src={img3}
+          alt={img1.slice(0, 9)}
+        />
         <motion.img src={img4} alt={img1.slice(0, 9)} />
       </motion.div>
     </>

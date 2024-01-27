@@ -140,39 +140,6 @@ ul {
   box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.447);
 }
 
-.mainHero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  @media (max-width: 50em) {
-    justify-content: start;
-  }
-}
-.mainHero h2 {
-  color: #fff;
-  font-family: "ClashDisplay", sans-serif;
-  font-size: 449.841px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-  position: absolute;
-
-  @media (max-width: 70em) {
-    font-size: 300px;
-  }
-  @media (max-width: 50em) {
-    font-size: 200px;
-  }
-  @media (max-width: 40em) {
-    font-size: 150px;
-  }
-  @media (max-width: 30em) {
-    font-size: 70px;
-  }
-}
-
 .images {
   display: flex;
   flex-direction: row;
@@ -204,8 +171,8 @@ ul {
     height: 250.465px;
   }
   @media (max-width: 40em) {
-    width: 150.184px;
-    height: 150.465px;
+    width: 100.184px;
+    height: 100.465px;
   }
 }
 .images img:nth-child(2) {
