@@ -153,7 +153,9 @@ function hero() {
         </div>
       </div>
       <div className="w-full Ph">
-        <MainCanvas fS={fS} forward={forward} mouse={mouse} />
+        <Suspense fallback={<img src="./Assests/Can.webp" alt="can" />}>
+          <MainCanvas fS={fS} forward={forward} mouse={mouse} />
+        </Suspense>
       </div>
       <div className="btnDiv mb-8">
         <button className="btn-p font-primary font-bold">Shop Taste</button>

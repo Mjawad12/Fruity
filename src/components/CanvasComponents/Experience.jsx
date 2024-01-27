@@ -44,11 +44,9 @@ function Experience({ fS, forward, mouse }) {
           }}
           scale={1.15}
         >
-          <Suspense fallback={<img src="./Assests/Can.webp" alt="can" />}>
-            <Can fS={fS} />
-            <Canred fS={fS} />
-            <Canpurple fS={fS} />
-          </Suspense>
+          <Can fS={fS} />
+          <Canred fS={fS} />
+          <Canpurple fS={fS} />
         </motion.group>
       </Float>
     </>
